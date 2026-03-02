@@ -1,0 +1,81 @@
+.heading{
+  text-align: center;
+  font-size: 30px;
+  margin: 0 0 28px;
+}
+
+ 
+.grid{
+  max-width: 1120px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.card{
+  background: #f3f4f6;      
+  padding: 28px 18px;
+  text-align: center;
+}
+
+.highlight{
+  background: #fff7e6;      
+}
+
+ 
+.avatarWrap{
+  width: 128px;
+  height: 128px;
+  margin: 0 auto 16px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.avatar{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name{
+  font-size: 18px;
+  margin: 0;
+  font-weight: 800;
+}
+
+.role{
+  margin: 6px 0 14px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* icons row */
+.social{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social a{
+  color: rgba(17,24,39,0.7);
+  display: inline-flex;
+}
+
+.social a:hover{
+  color: rgba(17,24,39,1);
+}
+
+@media (max-width: 1000px){
+  .grid{ grid-template-columns: repeat(2, 1fr); max-width: 720px; }
+}
+@media (max-width: 520px){
+  .grid{ grid-template-columns: 1fr; max-width: 360px; }
+}
+@media (max-width: 1200px){
+  .grid, .row, .box{
+    max-width: 100%;
+  }
+}

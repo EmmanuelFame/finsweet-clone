@@ -1,0 +1,35 @@
+.header{
+  background: var(--navy);
+  color: #fff;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.brand{
+  font-weight: 800;
+  font-size: 22px;
+}
+.nav{
+  display: flex;
+  gap: 22px;
+  opacity: 0.95;
+}
+.nav a{
+  font-size: 14px;
+}
+.subscribe{
+  background: #fff7e6;
+  border: 0;
+  padding: 12px 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+@media (max-width: 760px){
+  .nav{ display: none; }
+}
