@@ -1,73 +1,108 @@
-# React + TypeScript + Vite
+# Finsweet Clone (React + TypeScript + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beginner-friendly React + TypeScript clone of the Finsweet homepage design.
+This repo currently contains the complete **Home page layout** with reusable layout components.
 
-Currently, two official plugins are available:
+# Directory
+src/
+  components/
+    home/
+    layout/
+    icons/
+  pages/
+  data/
+  types/
+  assets/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✅ What’s implemented so far
 
-## React Compiler
+### Layout
+- Navbar (reusable)
+- Footer (reusable)
+- Global container + section spacing styles
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Home page sections
+- Hero section (background image + overlay)
+- Featured Post + All Posts grid (hover states, author color)
+- About Us / Our Mission (with white → yellow → purple top bar)
+- Choose a Category (SVG icons, active state)
+- Special Post (“Why we started” with overlapping card)
+- List of Authors (avatars + social icons)
+- Featured In row (logo placeholders)
+- Testimonials block (arrows + basic switching)
+- Home CTA (“Join our team…”)
 
-## Expanding the ESLint configuration
+## 🧱 Tech Stack
+- React
+- TypeScript
+- Vite
+- CSS Modules
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Getting started (for your friend)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 1) Clone the repository
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+git clone https://github.com/<YOUR-USERNAME>/<REPO-NAME>.git
+cd <REPO-NAME>
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2) Install dependencies
+npm install
+3) Run the dev server
+npm run dev
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Open the URL Vite prints (usually http://localhost:5173).
+
+4) Build (optional)
+npm run build
+npm run preview
+👥 Team workflow (branches + PR review)
+Create a new feature branch
+git checkout -b feature/<short-name>
+Commit your work
+git add .
+git commit -m "Add <thing>"
+git push -u origin feature/<short-name>
+Open a Pull Request on GitHub
+
+Go to GitHub → Pull Requests → New PR
+
+Base: main
+
+Compare: your feature/... branch
+
+Request review from the teammate
+
+After approval → Merge
+
+📝 Notes
+
+Images are stored in src/assets/
+
+Home page sections live in src/components/home/
+
+SVG icons live in src/components/icons/Icons.tsx
+
+
+**Important:** Replace `<YOUR-USERNAME>` and `<REPO-NAME>` before pushing.
+
+---
+
+Collaborator:
+1. Pull latest `main`
+2. Create a feature branch for the next page (example: `feature/blog-page`)
+3. Build page components
+4. Open PR for review
+
+Commands for them:
+
+```bash
+git checkout main
+git pull
+git checkout -b feature/blog-page
+# work...
+git add .
+git commit -m "Build Blog page layout"
+git push -u origin feature/blog-page
