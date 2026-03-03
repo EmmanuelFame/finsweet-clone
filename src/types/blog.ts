@@ -6,6 +6,7 @@ export type Post = {
   date: string;
   category: string;
   coverUrl: string;
+  authorAvatar?: string;
 };
 
 export type Author = {

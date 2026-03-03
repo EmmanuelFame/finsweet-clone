@@ -1,23 +1,30 @@
+import { Link } from "react-router-dom";
 import styles from "./Footer.module.css";
-import { IconFacebook, IconTwitter, IconInstagram, IconLinkedIn } from "../icons/Icons";
+import {
+  IconFacebook,
+  IconTwitter,
+  IconInstagram,
+  IconLinkedIn,
+} from "../icons/Icons";
 
 export function Footer() {
   return (
     <footer className={styles.footer}>
       <div className="container">
         <div className={styles.top}>
-          <div className={styles.brand}>{"{Finsweet"}</div>
+          <Link to="/" className={styles.brand}>
+            {"{Finsweet"}
+          </Link>
 
           <div className={styles.links}>
-            <a href="#">Home</a>
-            <a href="#">Blog</a>
-            <a href="#">About us</a>
-            <a href="#">Contact us</a>
-            <a href="#">Privacy Policy</a>
+            <Link to="/">Home</Link>
+            <Link to="/blog">Blog</Link>
+            <Link to="/about">About us</Link>
+            <Link to="/contact">Contact us</Link>
+            <Link to="/privacy">Privacy Policy</Link>
           </div>
         </div>
 
-         
         <div className={styles.newsletter}>
           <h3 className={styles.newsTitle}>
             Subscribe to our news letter to get latest updates and news
@@ -36,11 +43,19 @@ export function Footer() {
           </div>
 
           <div className={styles.social}>
-            <a href="#" aria-label="Facebook"><IconFacebook /></a>
-            <a href="#" aria-label="Twitter"><IconTwitter /></a>
-            <a href="#" aria-label="Instagram"><IconInstagram /></a>
-            <a href="#" aria-label="LinkedIn"><IconLinkedIn /></a>
-            </div>
+            <a href="#" aria-label="Facebook">
+              <IconFacebook />
+            </a>
+            <a href="#" aria-label="Twitter">
+              <IconTwitter />
+            </a>
+            <a href="#" aria-label="Instagram">
+              <IconInstagram />
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <IconLinkedIn />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
