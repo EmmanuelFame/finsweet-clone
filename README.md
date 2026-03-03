@@ -53,7 +53,7 @@ assets/ → Images (PNG, SVG)
 
 ---
 
-# 🚀 Setup Instructions (For HarrySneh)
+#  Setup Instructions 
 
 ### 1️⃣ Clone the Repository
 
