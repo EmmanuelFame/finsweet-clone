@@ -10,7 +10,7 @@ import blogImage4 from "../assets/blog4.png";
 import blogImage5 from "../assets/blog5.png";
 import blogPostImage from "../assets/blogpost.png";
 import blogauthor from "../assets/author.png";
-import aboutHomeImg from "../assets/abouthome.png";
+// import aboutHomeImg from "../assets/abouthome.png";
 
 export const heroPost: Post = {
   id: "hero-1",
