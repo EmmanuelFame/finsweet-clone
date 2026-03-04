@@ -1,0 +1,30 @@
+.item {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.image {
+  width: 250px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.category {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #6a0dad;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+  max-width: 500px;
+}
