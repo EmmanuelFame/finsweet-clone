@@ -8,7 +8,7 @@ import category  from "../assets/category.png";
 const Category: React.FC = () => {
   const blogData = [
     {
-      title: "Top 6 free website mockup tools 2022",
+      title: "Top 66 free website mockup tools 2022",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       image: category,
