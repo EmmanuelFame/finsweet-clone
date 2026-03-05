@@ -3,6 +3,7 @@ import styles from "../components/category/Category.module.css";
 import Header from "../components/category/Header";
 import BlogCard from "../components/category/BlogCard";
 import Sidebar from "../components/category/Sidebar";
+import category  from "../assets/category.png";
 
 const Category: React.FC = () => {
   const blogData = [
@@ -10,25 +11,25 @@ const Category: React.FC = () => {
       title: "Top 6 free website mockup tools 2022",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      image: category,
     },
     {
       title: "Step-by-step guide to choosing great font pairs",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      image: category,
     },
     {
       title: "Ten free google fonts that you should use",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      image: category,
     },
     {
       title: "What did I learn from doing 50+ design sprints?",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      image: category,
     },
   ];
 

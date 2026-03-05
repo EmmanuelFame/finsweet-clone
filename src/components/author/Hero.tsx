@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./Hero.module.css";
+import author1 from "../../assets/author1.png";
 
 const Hero: React.FC = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.content}>
         <img
-          src="/images/profile.jpg"
-          alt="Profile"
+          src={author1}
+          alt="author1"
           className={styles.profileImage}
         />
 

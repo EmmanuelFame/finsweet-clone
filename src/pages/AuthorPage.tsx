@@ -2,6 +2,8 @@ import React from "react";
 import Hero from "../components/author/Hero";
 import PostCard from "../components/author/PostCard";
 import styles from "../components/author/AuthorPage.module.css";
+import author2 from "../assets/author2.png";
+import author3 from "../assets/author2.png";
 
 const AuthorPage: React.FC = () => {
   return (
@@ -16,14 +18,14 @@ const AuthorPage: React.FC = () => {
             category="BUSINESS"
             title="Font sizes in UI design: The complete guide to follow"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            image="/images/building.jpg"
+            image ={author2}
           />
 
           <PostCard
             category="ECONOMY"
             title="How to build rapport with your web design clients"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            image="/images/team.jpg"
+            image={author3}
           />
         </div>
       </section>
