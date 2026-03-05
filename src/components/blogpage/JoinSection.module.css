@@ -1,0 +1,23 @@
+.join {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.join h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.join p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.join button {
+  background: #f4b400;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}

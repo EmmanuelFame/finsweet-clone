@@ -1,0 +1,43 @@
+.sidebar {
+  padding-left: 30px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.categories {
+  list-style: none;
+  padding: 0;
+}
+
+.categories li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.active {
+  background-color: #f4c542;
+  border-color: #f4c542;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags span {
+  border: 1px solid #ddd;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+}

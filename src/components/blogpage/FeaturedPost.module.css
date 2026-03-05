@@ -1,0 +1,45 @@
+.featured {
+  background: #eae6f3;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.content {
+  max-width: 500px;
+}
+
+.label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #888;
+}
+
+.content h1 {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+.content p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.button {
+  background: #f4b400;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.image {
+  width: 400px;
+  border-radius: 8px;
+  object-fit: cover;
+}

@@ -5,6 +5,10 @@ import { Home } from "./pages/Home";
 import { Blog } from "./pages/Blog";
 import { BlogPost } from "./pages/BlogPost";
 import { About } from "./pages/About";
+import ContactPage from "./pages/ContactPage";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import AuthorPage from "./pages/AuthorPage";
+import BlogPage from "./pages/BlogPage";
 
 
 export default function App() {
@@ -19,8 +23,10 @@ export default function App() {
 
         {/* optional placeholders (remove if you don't want yet) */}
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<div className="container section">Contact page coming soon.</div>} />
-        <Route path="/privacy" element={<div className="container section">Privacy Policy coming soon.</div>} />
+        <Route path="/blogpage" element={<BlogPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/author" element={<AuthorPage />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>
 
       <Footer />
